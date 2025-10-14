@@ -55,9 +55,9 @@ func Unpack(dir string, model types.Model) (*Bundle, error) {
 	}
 
 	// Always create the runtime config
-	if err := unpackRuntimeConfig(bundle, model); err != nil {
-		return nil, fmt.Errorf("add config.json to runtime bundle: %w", err)
-	}
+	// if err := unpackRuntimeConfig(bundle, model); err != nil {
+	// 	return nil, fmt.Errorf("add config.json to runtime bundle: %w", err)
+	// }
 
 	return bundle, nil
 }
